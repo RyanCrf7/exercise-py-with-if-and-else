@@ -1,0 +1,15 @@
+height = float(input("Enter your height (in meters):"))
+gender = input("Enter you gender (male/female):")
+if gender == "male":
+     weight_ideal = (72.2 * height) - 58
+elif gender == "female":
+      weight_ideal = (62.1 * height) - 44.7
+else:
+    print("Invalid gender input. Please enter 'male' or 'female'.")
+    weight_ideal= None
+
+if weight_ideal is not None:
+    print(f'Your ideal weight is: {weight_ideal:2f}kg')
+    
+               
+        
